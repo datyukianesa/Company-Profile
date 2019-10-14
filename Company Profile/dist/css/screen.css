@@ -1,0 +1,16 @@
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.full-height {
+  position: static; top: 0; left: 0; height: 768px; width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 0px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}

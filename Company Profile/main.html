@@ -11,20 +11,64 @@
     <link rel="stylesheet" href="dist/css/animate.css">
     <link rel="stylesheet" href="dist/css/aos.css">
     <!-- custom css -->
-    <link rel="stylesheet" href="dist/css/sidebar.css">
-    <style media="screen">
-      html { scroll-behavior: smooth;}
-    </style>
+    <link rel="stylesheet" href="dist/css/overlay.css">
+    <link rel="stylesheet" href="dist/css/screen.css">
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <button type="button" name="button" class="btn btn-outline-info">
-        <span class="fa fa-list-ul"></span>
-        <a href="#" data-target="sidebar" data-placement="left"></a>
-      </button>
-      <a href="#" class="nav-link navbar-brand">Community Profile</a>
-    </nav>
+  <body onload="on2()">
+    <div class="full-height d-flex flex-wrap align-content-end p-5 bg-dark text-white">
+      <h1>Head</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="full-height d-flex flex-wrap align-content-end p-5" id="second">
+      <h1>Head</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.lorem</p>
+    </div>
+    <!-- overlays -->
+    <div class="overlay1" id="overlay1">
+      <div class="d-flex flex-column align-self-start justify-content-center m-2">
+        <button type="button" name="top" class="btn btn-info btn-block">
+          <span class="fa fa-2x fa-chevron-up"></span>
+        </button>
+      </div>
+      <!-- <div class="d-flex flex-row align-self-stretch justify-content-between m-2">
+        <a href="#">
+          <button type="button" name="top" class="btn btn-outline-light btn-block">Left</button>
+        </a>
+        <a href="#">
+          <button type="button" name="top" class="btn btn-outline-light btn-block">Right</button>
+        </a>
+      </div> -->
+      <div class="d-flex flex-column align-self-end justify-content-center m-2 fixed-bottom">
+        <button type="button" name="top" class="btn btn-info btn-block">
+          <span class="fa fa-2x fa-chevron-down"></span>
+      </div>
+    </div>
+
+    <div class="overlay2" id="overlay2">
+    </div>
+
     <!-- js script -->
+    <script type="text/javascript">
+    // overlay toggler1
+      function on() {
+        document.getElementById("overlay1").style.display = "block";
+      }
+      function off() {
+        document.getElementById("overlay1").style.display = "none";
+      }
+      // overlay toggler2
+        function on2() {
+          document.getElementById("overlay2").style.display = "block";
+        }
+        function off2() {
+          document.getElementById("overlay2").style.display = "none";
+        }
+
+      // Fullscreen Toggler
+
+    </script>
+    <!-- imports -->
     <script type="text/javascript" src="dist/js/aos.js"></script>
     <script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="dist/js/jquery.min.js"></script>
